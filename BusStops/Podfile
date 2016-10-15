@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+def pods
+    pod 'Alamofire', '~> 4.0'
+    pod 'AlamofireImage', '~> 3.0'
+end
+
+target 'BusStops' do
+    pods
+end
+
+target 'BusStopsTests' do
+    pods
+end
+
+

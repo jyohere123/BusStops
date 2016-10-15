@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cyL-6f-5HI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bus Stops List View Controller-->
+        <scene sceneID="XWv-dY-GGK">
+            <objects>
+                <tableViewController storyboardIdentifier="BusStopsListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nQT-2P-qW9" customClass="BusStopsListViewController" customModule="BusStops" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cme-zM-HzH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="nQT-2P-qW9" id="aId-oa-g15"/>
+                            <outlet property="delegate" destination="nQT-2P-qW9" id="g3z-7h-1qc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1dv-MX-GO2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAs-v6-0ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GLx-0W-Dgx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cyL-6f-5HI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P6r-w7-tC9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nQT-2P-qW9" kind="relationship" relationship="rootViewController" id="xlc-Ox-bWZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pq9-OR-y46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
