@@ -101,7 +101,7 @@ extension BusStopsListViewController
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 116;
+        return 120;
     }
     
     
