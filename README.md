@@ -7,5 +7,5 @@ The app displays a listing of all the bus stops in the city, including the follo
 
 API's used: http://api.dndzgz.com/services/bus
 
-Used the View Controller, Interactor and Presenter to avoid massive View Controller
+Used the View Controller, Interactor and Presenter to avoid Massive View Controller.
 Helps in writing unit test cases to individually test the module.
